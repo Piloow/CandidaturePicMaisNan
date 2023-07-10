@@ -1,0 +1,189 @@
+body {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+    --grad: -webkit-linear-gradient(rgb(255, 182, 255), rgb(179, 68, 255));
+
+    --background: var(--white);
+    --accent: var(--purple);
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--accent);
+    font-family: SfPro, sans-serif;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: SfPro;
+    src: url(../assets/SF-Pro-Display-Thin.otf);
+    font-weight: bold;
+}
+
+.main-screen {
+    color: black;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.main-title {
+    color: black;
+    font-size: 4vh;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: solid thin grey;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: left;
+    padding-bottom: 1%;
+    height: 13vh;
+    width: 95%;
+}
+
+
+.screen-content {
+    color: black;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    padding-top: 2vh;
+    height: fit-content;
+    width: 95%;
+
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-3 {
+    background-color: #161617;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    padding-bottom: 4vh;
+}
+
+.items-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 120vh;
+    padding-top: 4vh;
+
+}
+
+.box-center {
+    color: white;
+    width: 70vh;
+    height: 80vh;
+    padding-inline: 10px;
+    background-color: #282c34;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box-left {
+    width: 50vh;
+    height: 38vh;
+    padding-inline: 10px;
+    background-color: #282c34;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 5vh;
+
+}
+
+h2 {
+    font-size: 36px;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+li {
+    list-style: square;
+}
+
+.cv {
+    list-style: disc;
+
+}
+
+section {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    position: relative;
+}
+
+.parallax {
+    overflow: visible;
+    letter-spacing: -2px;
+    line-height: 2;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.parallax span {
+    display: block;
+    margin-right: 50px;
+}
+
+.progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent);
+}
