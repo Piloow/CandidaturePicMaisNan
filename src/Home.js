@@ -1,7 +1,6 @@
 import './styles/Content.css';
 import picsous from "./assets/picsous.png";
 import React from "react";
-import tva from "./assets/TVA.png";
 
 function Home() {
     return (

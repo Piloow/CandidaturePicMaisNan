@@ -49,7 +49,3 @@ function Banner() {
 }
 
 export default Banner
-
-function handleClick() {
-    alert('✨ Ceci est un clic ✨')
-}

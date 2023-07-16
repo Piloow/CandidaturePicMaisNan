@@ -27,9 +27,12 @@ body {
 @font-face {
     font-family: SfPro;
     src: url(../assets/SF-Pro-Display-Thin.otf);
-    font-weight: bold;
 }
 
+@font-face {
+    font-family: SfProBold;
+    src: url(../assets/SFPRODISPLAYREGULAR.OTF);
+}
 .main-screen {
     color: black;
     text-align: left;
@@ -68,6 +71,7 @@ body {
     padding-top: 2vh;
     height: fit-content;
     width: 95%;
+    overflow: hidden;
 
 }
 
@@ -130,16 +134,19 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: left;
-    padding-left: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+
 
 }
 
 h2 {
+    font-family: SfProBold, sans-serif;
     font-size: 36px;
     background: var(--grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 li {
